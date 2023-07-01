@@ -1,0 +1,19 @@
+---
+# This layout is simply a wrapper for the page_no_title layout as Jekyll's
+# default pages use layout: home
+layout: page_no_title
+---
+<div class="position-relative overflow-hidden mb-5 text-center">
+    <div class="col-md-6 p-lg-4 pt-lg-0 mx-auto my-5">
+        <!-- <h1 class="display-3 fw-bold">Designed for engineers</h1> -->
+        <!-- <svg class="" width="250" height="250"><use xlink:href="/assets/svg/seasoned_tech_logo.svg"/></svg> -->
+        <h1 title="Seasoned Tech">
+            <img src="/assets/svg/seasoned_tech_logo.svg" alt="Seasoned Tech" style="max-height: 23vh;" />
+        </h1>
+        <h3 class="fw-normal mb-3">Tasty commentary on digital tools.</h3>
+        
+    </div>
+</div>
+<div class="container">
+    {{ content }}
+</div>

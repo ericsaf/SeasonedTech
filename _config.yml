@@ -1,0 +1,87 @@
+# ------------------------------------------------------------
+# Standard Theme Configuration
+# ------------------------------------------------------------
+title: Seasoned Tech
+author:
+  name: eric
+  email: ericsaf@gmail.com
+url: "ericsaf.github.io"
+baseurl: ""
+
+
+# The `>` after `description:` means to ignore line-breaks until next key.
+# If you want to omit the line-break after the end of text, use `>-` instead.
+description: >
+  Jekyll Twitter Bootstrap is a Jekyll theme based on Twitter Bootstrap for
+  easy customization by leveraging the Bootstrap framework for styling and
+  layout.
+
+# Build settings
+remote_theme: jekyll-twitter-bootstrap
+# Used to show excerpt/first paragraph for blog posts in listing.
+show_excerpts: true
+# Used in posts for explicitly delimiting excerpt.
+excerpt_separator: <!--more-->
+# Configure jekyll-paginate
+paginate: 10
+paginate_path: "/blog/:num"
+# Define the post permalink format.
+permalink: /blog/:title
+# Default front matter for content types.
+defaults:
+  # Posts should default to layout=post and sidebar=categories,tags.
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      sidebar:
+        - categories
+        - tags
+
+# Add pages here to explicitly appear in this order in your navigation.
+header_pages:
+  - blog.md
+
+# Specify directories or files to exclude from the build.
+exclude:
+  - jekyll-twitter-bootstrap.gemspec
+  - LICENSE.txt
+  - README.md
+  - server
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+# jekyll-feed plugin configuration
+# Default if not overridden: /feed.xml
+feed:
+  path: /blog
+
+# ------------------------------------------------------------
+# Jekyll Twitter Bootstrap Theme-Specific Configuration
+# ------------------------------------------------------------
+jekyll-twitter-bootstrap:
+  # Starting year for copyright in footer.
+  # If empty, the current year only is used (e.g. 2023).
+  # If populated, the year specified is prepended to the current year with a
+  # hyphen to indicate a range (e.g. 2022-2023).
+  copyright_year_start: 2023
+  # Date format used by the site. See https://strftime.net/ for syntax.
+  # The default (empty value) is: '%B %e, %Y at %l:%M%p'
+  date_format: 
+  # HTML to override the defaults for header and footer logos.
+  # This should be the full <img .../> or <svg...></svg> code
+  # for the image referenced within the site.
+  # Defaults if not overridden:
+  #   header: <svg class="bi me-2" width="40" height="32"><use xlink:href="/assets/svg/bootstrap.svg#bootstrap"/></svg>
+  #   footer: <svg class="bi" width="30" height="24"><use xlink:href="/assets/svg/bootstrap-icons.svg#bootstrap"/></svg>
+  logo:
+    header: 
+    footer: 
+# To enable Google Analytics (GA) tracking, provide your GA tracking ID below.
+# To disable GA tracking for a particular page, add the following to the
+# page's front matter: ga_do_not_track: true
+google_analytics_tracking_id: 

@@ -1,0 +1,33 @@
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+{%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+<header class="p-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+            <img src="/assets/svg/seasoned_tech_icon.svg" alt="Seasoned Tech Logo" width="40" height="32" />
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            {%- for path in page_paths -%}
+                {%- assign this_page = site.pages | where: "path", path | first -%}
+                {%- if this_page.title -%}
+                    {%- if this_page.url == page.url -%}
+                        {% assign class = 'active' %}
+                        {% assign aria = 'aria-current="page"' %}
+                    {%- endif -%}
+                    <!-- <li><a href="{{ this_page.url | relative_url }}" class="nav-link {{ class }}" {{ aria }}>{{ this_page.title | escape }}</a></li> -->
+                    <li><a href="{{ this_page.url | relative_url }}" class="nav-link px-2 {{ class }}" {{ aria }}>{{ this_page.title | escape }}</a></li>
+                    {% assign class = nil %}
+                    {% assign aria = nil %}
+                {%- endif -%}
+            {%- endfor -%}
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search" spellcheck="false" data-ms-editor="true">
+        </form>
+
+      </div>
+    </div>
+  </header>
+
