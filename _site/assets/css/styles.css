@@ -5,7 +5,19 @@
 a {
     color: #00ff66;
 }
-
+article.blog-post img {
+    max-width: 270px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+article.blog-post figure:nth-child(odd), article.blog-post img:nth-child(odd) {
+    float: left;
+    margin-right: 1rem;
+}
+article.blog-post figure:nth-child(even), article.blog-post img:nth-child(even) {
+    float: right;
+    margin-left: 1rem;
+}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -14,7 +26,7 @@ a {
     user-select: none;
 }
 
-.b-example-divider {
+.b-example-divider { 
     height: 3rem;
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
