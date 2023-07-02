@@ -1,3 +1,7 @@
+body {
+    font-size: 1.2rem !important;
+}
+
 .nav-link {
     color: #fff;
 }
@@ -10,14 +14,16 @@ article.blog-post img {
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
-article.blog-post figure:nth-child(odd), article.blog-post img:nth-child(odd) {
+article.blog-post figure.left, article.blog-post img.left {
     float: left;
     margin-right: 1rem;
 }
-article.blog-post figure:nth-child(even), article.blog-post img:nth-child(even) {
+article.blog-post figure.right, article.blog-post img.right {
     float: right;
     margin-left: 1rem;
 }
+
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
