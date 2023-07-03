@@ -12,6 +12,7 @@ tags:
   - Productivity
 ---
 
+<img src="/assets/images/Illustration_of_the_Notion_Logo_facing_off_i_0.jpg" alt="Illustration of the Notion Logo facing off in a battle with the Microsoft Loop logo" class="left">
 Greetings, fellow productivity aficionados and efficiency enthusiasts! Today, we find ourselves in the thrilling clash of two titans in the digital realm: Microsoft Loop and Notion.
 <!--more--> These powerhouses are here to revolutionize the way we tackle tasks, collaborate, and bring order to the chaos of our lives. 
 So, grab your digital pens as we delve into the charming and witty world of productivity software!

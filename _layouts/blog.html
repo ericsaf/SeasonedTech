@@ -13,7 +13,7 @@ layout: page_sidebar
     {%- assign date_format = site.jekyll-twitter-bootstrap.date_format | default: "%B %e, %Y at %l:%M%p" -%}
     {%- for post in posts -%}
         <!-- BEGIN Blog post -->
-        <article class="blog-post mb-5">
+        <article class="blog-post mb-5 clearfix">
             <h2 class="blog-post-title mb-1"><a href="{{ post.url | relative_url }}"
                 class="text-decoration-none">{{ post.title | escape }}</a></h2>
             <p class="blog-post-meta">
