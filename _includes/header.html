@@ -16,7 +16,7 @@
                         {% assign aria = 'aria-current="page"' %}
                     {%- endif -%}
                     <!-- <li><a href="{{ this_page.url | relative_url }}" class="nav-link {{ class }}" {{ aria }}>{{ this_page.title | escape }}</a></li> -->
-                    <li><a href="{{ this_page.url | relative_url }}" class="nav-link px-2 {{ class }}" {{ aria }}>{{ this_page.title | escape }}</a></li>
+                    <li><a href="{{ this_page.url | relative_url }}/" class="nav-link px-2 {{ class }}" {{ aria }}>{{ this_page.title | escape }}</a></li>
                     {% assign class = nil %}
                     {% assign aria = nil %}
                 {%- endif -%}
