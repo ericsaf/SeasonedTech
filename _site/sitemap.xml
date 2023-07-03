@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4888/blog/long-live-subscriptions</loc>
+<lastmod>2023-06-23T20:56:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4888/blog/microsoft-loop-vs-notion-clash-of-the-titans</loc>
+<lastmod>2023-06-24T10:26:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4888/404</loc>
+</url>
+<url>
+<loc>http://localhost:4888/blog</loc>
+</url>
+<url>
+<loc>http://localhost:4888/tags/</loc>
+</url>
+<url>
+<loc>http://localhost:4888/categories/</loc>
+</url>
+<url>
+<loc>http://localhost:4888/blog/</loc>
+</url>
+<url>
+<loc>http://localhost:4888/</loc>
+</url>
+</urlset>
